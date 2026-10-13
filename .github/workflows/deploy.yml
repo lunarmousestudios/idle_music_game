@@ -1,0 +1,51 @@
+name: "Godot 4.6 CI/CD Web Export"
+on:
+  push:
+    branches:
+      - main  # Triggers the build whenever you push to main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Export Web Build using Godot
+        uses: firebelley/godot-export@v5.3.0
+        with:
+          godot_version: 4.6-stable
+          export_preset_name: Web  # Must match the preset name in Godot exactly
+          archive_output: false
+
+      - name: Fix Godot 4 SharedArrayBuffer for GitHub Pages
+        run: |
+          cd /home/runner/work/github.event.repository.name/{{ github.event.repository.name }}/builds/Web
+          curl -fsSL https://githubusercontent.com -o coi-serviceworker.js
+          sed -i 's|<script>|<script src="coi-serviceworker.js"></script><script>|g' index.html
+
+      # ----------------------------------------------------
+      # Deployment Destination 1: GitHub Pages
+      # ----------------------------------------------------
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: builds/Web
+          branch: gh-pages # Pushes the compiled web files to a distinct branch
+
+      # ----------------------------------------------------
+      # Deployment Destination 2: Itch.io (Via Butler)
+      # ----------------------------------------------------
+      - name: Deploy to Itch.io
+        uses: josephbmanley/butler-publish-itchio-action@master
+        env:
+          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_API_KEY }}
+          CHANNEL: html5
+          GAME: your-itch-game-slug        # Replace with your actual itch game URL slug
+          USER: your-itch-username         # Replace with your actual itch username
+          PACKAGE: builds/Web

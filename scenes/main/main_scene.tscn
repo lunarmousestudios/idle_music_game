@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://2b6e3wkx2vsf"]
+
+[ext_resource type="Script" uid="uid://dto7b4odehn7q" path="res://scenes/main/main_scene.gd" id="1_dv3lr"]
+
+[node name="MainScene" type="CanvasLayer" unique_id=30763794]
+script = ExtResource("1_dv3lr")
+
+[node name="Button" type="Button" parent="." unique_id=318790009]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -58.0
+offset_top = -29.0
+offset_right = 58.0
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "press"
+
+[node name="Label" type="Label" parent="." unique_id=134093645]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -47.0
+offset_top = 40.0
+offset_right = 50.0
+offset_bottom = 108.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Score: 10000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
