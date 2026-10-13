@@ -44,6 +44,6 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_API_KEY }}
           CHANNEL: html5
-          GAME: idle-music-game        
-          USER: lunarmousestudios         
+          ITCHIO_GAME: idle-music-game        
+          ITCHIO_USER: lunarmousestudios         
           PACKAGE: builds/Web
