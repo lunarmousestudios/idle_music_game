@@ -40,10 +40,10 @@ jobs:
       # Deployment Destination 2: Itch.io (Via Butler)
       # ----------------------------------------------------
       - name: Deploy to Itch.io
-        uses: josephbmanley/butler-publish-itchio-action@master
+        uses: yeslayla/butler-publish-itchio-action@master
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_API_KEY }}
           CHANNEL: html5
-          ITCHIO_GAME: idle-music-game        
-          ITCHIO_USER: lunarmousestudios         
+          ITCH_GAME: idle-music-game
+          ITCH_USER: lunarmousestudios
           PACKAGE: builds/Web
