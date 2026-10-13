@@ -14,13 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Source Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Export Web Build using Godot
         uses: firebelley/godot-export@v8.0.0
         with:
-          # Automatically constructs correct TuxFamily download paths for 4.6-stable
-          godot_version: 4.6
+        godot_executable_download_url: https://downloads.tuxfamily.org/godotengine/4.6/Godot_v4.6-stable_linux.x86_64.zip
+        godot_export_templates_download_url: https://downloads.tuxfamily.org/godotengine/4.6/Godot_v4.6-stable_export_templates.tpz
           presets_to_export: "Web"
           relative_project_path: ./
           archive_output: false
