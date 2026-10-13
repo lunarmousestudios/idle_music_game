@@ -46,6 +46,6 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_API_KEY }}
           CHANNEL: html5
-          GAME: your-itch-game-slug        # Replace with your actual itch game URL slug
-          USER: your-itch-username         # Replace with your actual itch username
+          GAME: idle-music-game        # Replace with your actual itch game URL slug
+          USER: lunarmousestudios         # Replace with your actual itch username
           PACKAGE: builds/Web
