@@ -26,11 +26,6 @@ jobs:
           relative_export_path: ./builds/Web
           archive_output: false
 
-      - name: Fix Godot 4 SharedArrayBuffer for GitHub Pages
-        run: |
-          cd ${{ github.workspace }}/builds/Web
-          curl -fsSL https://githubusercontent.com -o coi-serviceworker.js
-          sed -i 's|<script>|<script src="coi-serviceworker.js"></script><script>|g' index.html
 
       # ----------------------------------------------------
       # Deployment Destination 1: GitHub Pages
