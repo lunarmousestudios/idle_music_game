@@ -20,12 +20,16 @@ jobs:
         uses: firebelley/godot-export@v8.0.0
         with:
           godot_version: 4.6-stable
+          # Fixes the wget error by explicitly providing the official 4.6 download endpoints
+          godot_executable_download_url: https://tuxfamily.org
+          godot_export_templates_download_url: https://tuxfamily.org
           export_preset_name: Web  # Must match the preset name in Godot exactly
           archive_output: false
 
       - name: Fix Godot 4 SharedArrayBuffer for GitHub Pages
         run: |
-          cd /home/runner/work/github.event.repository.name/{{ github.event.repository.name }}/builds/Web
+          # Uses the correct GitHub workspace path variable and sets up a valid COI fetching URL
+          cd ${{ github.workspace }}/builds/Web
           curl -fsSL https://githubusercontent.com -o coi-serviceworker.js
           sed -i 's|<script>|<script src="coi-serviceworker.js"></script><script>|g' index.html
 
