@@ -26,24 +26,8 @@ jobs:
           relative_export_path: ./builds
           archive_output: false
 
-      - name: "Flatten Directory Layout"
-        run : |
-          if [ -d "./build/Web" ]; then
-            mv ./builds/Web/* ./builds/
-            rmdir ./builds/Web
-          fi
       # ----------------------------------------------------
-      # Deployment Destination 1: GitHub Pages
-      # ----------------------------------------------------
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: builds
-          branch: gh-pages 
-          clean: true
-
-      # ----------------------------------------------------
-      # Deployment Destination 2: Itch.io (Via Butler)
+      # Deployment Destination Itch.io (Via Butler)
       # ----------------------------------------------------
       - name: Deploy to Itch.io
         uses: yeslayla/butler-publish-itchio-action@master
