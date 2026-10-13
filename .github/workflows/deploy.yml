@@ -19,8 +19,8 @@ jobs:
       - name: Export Web Build using Godot
         uses: firebelley/godot-export@v8.0.0
         with:
-          godot_executable_download_url: https://downloads.tuxfamily.org/godotengine/4.6/Godot_v4.6-stable_linux.x86_64.zip
-          godot_export_templates_download_url: https://downloads.tuxfamily.org/godotengine/4.6/Godot_v4.6-stable_export_templates.tpz
+          godot_executable_download_url: https://downloads.godotengine.org/?version=4.6&flavor=stable&slug=linux.x86_64.zip&platform=linux.64
+          godot_export_templates_download_url: https://downloads.godotengine.org/?version=4.6&flavor=stable&slug=export_templates.tpz&platform=templates
           presets_to_export: "Web"
           relative_project_path: ./
           archive_output: false
