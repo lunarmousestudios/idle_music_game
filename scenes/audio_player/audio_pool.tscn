@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bqwb3jucxvjwd"]
+
+[ext_resource type="Script" uid="uid://c1rovrhk265r5" path="res://scenes/audio_player/audio_pool.gd" id="1_kfto5"]
+
+[node name="AudioPool" type="Control" unique_id=273793504]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kfto5")
+
+[node name="Stream1" type="AudioStreamPlayer2D" parent="." unique_id=34317606]
+
+[node name="Stream2" type="AudioStreamPlayer2D" parent="." unique_id=272959452]
+
+[node name="Stream3" type="AudioStreamPlayer2D" parent="." unique_id=95227249]
+
+[node name="Stream4" type="AudioStreamPlayer2D" parent="." unique_id=889034502]
+
+[node name="Stream5" type="AudioStreamPlayer2D" parent="." unique_id=102193836]
+
+[node name="Stream6" type="AudioStreamPlayer2D" parent="." unique_id=944443233]
+
+[node name="Stream7" type="AudioStreamPlayer2D" parent="." unique_id=555872480]
+
+[node name="Stream8" type="AudioStreamPlayer2D" parent="." unique_id=888982089]
+
+[node name="Stream9" type="AudioStreamPlayer2D" parent="." unique_id=771959060]
+
+[node name="Stream10" type="AudioStreamPlayer2D" parent="." unique_id=1426679814]
+
+[node name="Stream11" type="AudioStreamPlayer2D" parent="." unique_id=1535527171]
+
+[node name="Stream12" type="AudioStreamPlayer2D" parent="." unique_id=1527432027]
+
+[node name="Stream13" type="AudioStreamPlayer2D" parent="." unique_id=1167143283]
+
+[node name="Stream14" type="AudioStreamPlayer2D" parent="." unique_id=562234929]
+
+[node name="Stream15" type="AudioStreamPlayer2D" parent="." unique_id=229319526]
+
+[node name="Stream16" type="AudioStreamPlayer2D" parent="." unique_id=1234735926]

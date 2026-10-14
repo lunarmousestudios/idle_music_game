@@ -15,6 +15,11 @@ run/main_scene="uid://2b6e3wkx2vsf"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+AudioEvents="*uid://bq0gvdb32jhjq"
+PlayerResources="*uid://cnmo6hcnoy27j"
+
 [display]
 
 window/size/resizable=false

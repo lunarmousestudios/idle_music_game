@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dar5k4xr6bas6"]
+
+[ext_resource type="Script" uid="uid://o5onfimjnbm" path="res://scenes/sequencer/sequence_button.gd" id="1_s6jtf"]
+
+[node name="SequenceButton" type="Button" unique_id=896309173]
+custom_minimum_size = Vector2(32, 32)
+offset_right = 32.0
+offset_bottom = 32.0
+toggle_mode = true
+script = ExtResource("1_s6jtf")
+
+[node name="Flash" type="ColorRect" parent="." unique_id=687349162]
+visible = false
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 32.0
+color = Color(1, 0.3633125, 0.37417388, 1)
