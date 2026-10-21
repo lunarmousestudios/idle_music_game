@@ -9,12 +9,6 @@ script = ExtResource("1_dv3lr")
 
 [node name="AudioPool" parent="." unique_id=273793504 instance=ExtResource("2_ubvhi")]
 
-[node name="SequencerTab" parent="." unique_id=327590210 instance=ExtResource("3_ubvhi")]
-offset_left = 144.0
-offset_top = 88.0
-offset_right = 716.0
-offset_bottom = 120.0
-
 [node name="Beat" type="Timer" parent="." unique_id=125621210]
 
 [node name="Score" type="Label" parent="." unique_id=352233301]
@@ -23,5 +17,21 @@ offset_top = 45.0
 offset_right = 495.0
 offset_bottom = 68.0
 text = "Score: 1000000"
+
+[node name="MusicTracksScroll" type="ScrollContainer" parent="." unique_id=2051574910]
+offset_left = 10.0
+offset_top = 80.0
+offset_right = 591.0
+offset_bottom = 640.0
+
+[node name="MusicTracks" type="VBoxContainer" parent="MusicTracksScroll" unique_id=1473698470]
+layout_mode = 2
+
+[node name="SequencerTab" parent="MusicTracksScroll/MusicTracks" unique_id=327590210 instance=ExtResource("3_ubvhi")]
+layout_mode = 2
+
+[node name="SequencerTab2" parent="MusicTracksScroll/MusicTracks" unique_id=769310536 instance=ExtResource("3_ubvhi")]
+layout_mode = 2
+id = 1
 
 [connection signal="timeout" from="Beat" to="." method="_on_beat_timeout"]

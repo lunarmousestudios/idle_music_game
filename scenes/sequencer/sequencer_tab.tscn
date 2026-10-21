@@ -1,1055 +1,1074 @@
 [gd_scene format=3 uid="uid://dw110bdmott74"]
 
+[ext_resource type="Script" uid="uid://b4qx5am6mjf0j" path="res://scenes/sequencer/sequencer_tab.gd" id="1_b4k3x"]
 [ext_resource type="PackedScene" uid="uid://dar5k4xr6bas6" path="res://scenes/sequencer/sequence_button.tscn" id="1_n4t0j"]
 
 [node name="SequencerTab" type="VBoxContainer" unique_id=327590210]
+script = ExtResource("1_b4k3x")
 
-[node name="Row0" type="HBoxContainer" parent="." unique_id=1566400993]
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=242311777]
 layout_mode = 2
 
-[node name="B0_0" parent="Row0" unique_id=896309173 instance=ExtResource("1_n4t0j")]
+[node name="Instrument" type="OptionButton" parent="HBoxContainer" unique_id=1739862746]
+layout_mode = 2
+selected = 0
+item_count = 2
+popup/item_0/text = "Cowbell"
+popup/item_0/id = 0
+popup/item_1/text = "Guitar"
+popup/item_1/id = 1
+
+[node name="Sequencer" type="VBoxContainer" parent="." unique_id=892062077]
+layout_mode = 2
+
+[node name="Row0" type="HBoxContainer" parent="Sequencer" unique_id=1566400993]
+layout_mode = 2
+
+[node name="B0_0" parent="Sequencer/Row0" unique_id=896309173 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 pitch_value = 12
 
-[node name="B0_1" parent="Row0" unique_id=1903300178 instance=ExtResource("1_n4t0j")]
+[node name="B0_1" parent="Sequencer/Row0" unique_id=1903300178 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 1
 pitch_value = 12
 
-[node name="B0_2" parent="Row0" unique_id=71949958 instance=ExtResource("1_n4t0j")]
+[node name="B0_2" parent="Sequencer/Row0" unique_id=71949958 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 2
 pitch_value = 12
 
-[node name="B0_3" parent="Row0" unique_id=1339004221 instance=ExtResource("1_n4t0j")]
+[node name="B0_3" parent="Sequencer/Row0" unique_id=1339004221 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 3
 pitch_value = 12
 
-[node name="B0_4" parent="Row0" unique_id=729901344 instance=ExtResource("1_n4t0j")]
+[node name="B0_4" parent="Sequencer/Row0" unique_id=729901344 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 4
 pitch_value = 12
 
-[node name="B0_5" parent="Row0" unique_id=1056120282 instance=ExtResource("1_n4t0j")]
+[node name="B0_5" parent="Sequencer/Row0" unique_id=1056120282 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 5
 pitch_value = 12
 
-[node name="B0_6" parent="Row0" unique_id=1448771065 instance=ExtResource("1_n4t0j")]
+[node name="B0_6" parent="Sequencer/Row0" unique_id=1448771065 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 6
 pitch_value = 12
 
-[node name="B0_7" parent="Row0" unique_id=1606143595 instance=ExtResource("1_n4t0j")]
+[node name="B0_7" parent="Sequencer/Row0" unique_id=1606143595 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 7
 pitch_value = 12
 
-[node name="B0_8" parent="Row0" unique_id=1522496786 instance=ExtResource("1_n4t0j")]
+[node name="B0_8" parent="Sequencer/Row0" unique_id=1522496786 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 8
 pitch_value = 12
 
-[node name="B0_9" parent="Row0" unique_id=516120250 instance=ExtResource("1_n4t0j")]
+[node name="B0_9" parent="Sequencer/Row0" unique_id=516120250 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 9
 pitch_value = 12
 
-[node name="B0_10" parent="Row0" unique_id=403618151 instance=ExtResource("1_n4t0j")]
+[node name="B0_10" parent="Sequencer/Row0" unique_id=403618151 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 10
 pitch_value = 12
 
-[node name="B0_11" parent="Row0" unique_id=794045844 instance=ExtResource("1_n4t0j")]
+[node name="B0_11" parent="Sequencer/Row0" unique_id=794045844 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 11
 pitch_value = 12
 
-[node name="B0_12" parent="Row0" unique_id=967626616 instance=ExtResource("1_n4t0j")]
+[node name="B0_12" parent="Sequencer/Row0" unique_id=967626616 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 12
 pitch_value = 12
 
-[node name="B0_13" parent="Row0" unique_id=20134901 instance=ExtResource("1_n4t0j")]
+[node name="B0_13" parent="Sequencer/Row0" unique_id=20134901 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 13
 pitch_value = 12
 
-[node name="B0_14" parent="Row0" unique_id=1081445259 instance=ExtResource("1_n4t0j")]
+[node name="B0_14" parent="Sequencer/Row0" unique_id=1081445259 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 14
 pitch_value = 12
 
-[node name="B0_15" parent="Row0" unique_id=156432656 instance=ExtResource("1_n4t0j")]
+[node name="B0_15" parent="Sequencer/Row0" unique_id=156432656 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 15
 pitch_value = 12
 
-[node name="Row1" type="HBoxContainer" parent="." unique_id=272575485]
+[node name="Row1" type="HBoxContainer" parent="Sequencer" unique_id=272575485]
 layout_mode = 2
 
-[node name="B0_0" parent="Row1" unique_id=699133757 instance=ExtResource("1_n4t0j")]
+[node name="B0_0" parent="Sequencer/Row1" unique_id=699133757 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 pitch_value = 11
 
-[node name="B0_1" parent="Row1" unique_id=1154624405 instance=ExtResource("1_n4t0j")]
+[node name="B0_1" parent="Sequencer/Row1" unique_id=1154624405 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 1
 pitch_value = 11
 
-[node name="B0_2" parent="Row1" unique_id=1350376455 instance=ExtResource("1_n4t0j")]
+[node name="B0_2" parent="Sequencer/Row1" unique_id=1350376455 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 2
 pitch_value = 11
 
-[node name="B0_3" parent="Row1" unique_id=1010553846 instance=ExtResource("1_n4t0j")]
+[node name="B0_3" parent="Sequencer/Row1" unique_id=1010553846 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 3
 pitch_value = 11
 
-[node name="B0_4" parent="Row1" unique_id=231110604 instance=ExtResource("1_n4t0j")]
+[node name="B0_4" parent="Sequencer/Row1" unique_id=231110604 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 4
 pitch_value = 11
 
-[node name="B0_5" parent="Row1" unique_id=1033029360 instance=ExtResource("1_n4t0j")]
+[node name="B0_5" parent="Sequencer/Row1" unique_id=1033029360 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 5
 pitch_value = 11
 
-[node name="B0_6" parent="Row1" unique_id=1142781696 instance=ExtResource("1_n4t0j")]
+[node name="B0_6" parent="Sequencer/Row1" unique_id=1142781696 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 6
 pitch_value = 11
 
-[node name="B0_7" parent="Row1" unique_id=64177796 instance=ExtResource("1_n4t0j")]
+[node name="B0_7" parent="Sequencer/Row1" unique_id=64177796 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 7
 pitch_value = 11
 
-[node name="B0_8" parent="Row1" unique_id=970731607 instance=ExtResource("1_n4t0j")]
+[node name="B0_8" parent="Sequencer/Row1" unique_id=970731607 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 8
 pitch_value = 11
 
-[node name="B0_9" parent="Row1" unique_id=268858356 instance=ExtResource("1_n4t0j")]
+[node name="B0_9" parent="Sequencer/Row1" unique_id=268858356 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 9
 pitch_value = 11
 
-[node name="B0_10" parent="Row1" unique_id=1001953846 instance=ExtResource("1_n4t0j")]
+[node name="B0_10" parent="Sequencer/Row1" unique_id=1001953846 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 10
 pitch_value = 11
 
-[node name="B0_11" parent="Row1" unique_id=753332788 instance=ExtResource("1_n4t0j")]
+[node name="B0_11" parent="Sequencer/Row1" unique_id=753332788 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 11
 pitch_value = 11
 
-[node name="B0_12" parent="Row1" unique_id=1123211777 instance=ExtResource("1_n4t0j")]
+[node name="B0_12" parent="Sequencer/Row1" unique_id=1123211777 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 12
 pitch_value = 11
 
-[node name="B0_13" parent="Row1" unique_id=2022861441 instance=ExtResource("1_n4t0j")]
+[node name="B0_13" parent="Sequencer/Row1" unique_id=2022861441 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 13
 pitch_value = 11
 
-[node name="B0_14" parent="Row1" unique_id=1439550783 instance=ExtResource("1_n4t0j")]
+[node name="B0_14" parent="Sequencer/Row1" unique_id=1439550783 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 14
 pitch_value = 11
 
-[node name="B0_15" parent="Row1" unique_id=1096093785 instance=ExtResource("1_n4t0j")]
+[node name="B0_15" parent="Sequencer/Row1" unique_id=1096093785 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 15
 pitch_value = 11
 
-[node name="Row2" type="HBoxContainer" parent="." unique_id=2098190546]
+[node name="Row2" type="HBoxContainer" parent="Sequencer" unique_id=2098190546]
 layout_mode = 2
 
-[node name="B0_0" parent="Row2" unique_id=504620739 instance=ExtResource("1_n4t0j")]
+[node name="B0_0" parent="Sequencer/Row2" unique_id=504620739 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 pitch_value = 10
 
-[node name="B0_1" parent="Row2" unique_id=1050844558 instance=ExtResource("1_n4t0j")]
+[node name="B0_1" parent="Sequencer/Row2" unique_id=1050844558 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 1
 pitch_value = 10
 
-[node name="B0_2" parent="Row2" unique_id=819510632 instance=ExtResource("1_n4t0j")]
+[node name="B0_2" parent="Sequencer/Row2" unique_id=819510632 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 2
 pitch_value = 10
 
-[node name="B0_3" parent="Row2" unique_id=1071980209 instance=ExtResource("1_n4t0j")]
+[node name="B0_3" parent="Sequencer/Row2" unique_id=1071980209 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 3
 pitch_value = 10
 
-[node name="B0_4" parent="Row2" unique_id=1851281119 instance=ExtResource("1_n4t0j")]
+[node name="B0_4" parent="Sequencer/Row2" unique_id=1851281119 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 4
 pitch_value = 10
 
-[node name="B0_5" parent="Row2" unique_id=1951863424 instance=ExtResource("1_n4t0j")]
+[node name="B0_5" parent="Sequencer/Row2" unique_id=1951863424 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 5
 pitch_value = 10
 
-[node name="B0_6" parent="Row2" unique_id=334251654 instance=ExtResource("1_n4t0j")]
+[node name="B0_6" parent="Sequencer/Row2" unique_id=334251654 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 6
 pitch_value = 10
 
-[node name="B0_7" parent="Row2" unique_id=1434483550 instance=ExtResource("1_n4t0j")]
+[node name="B0_7" parent="Sequencer/Row2" unique_id=1434483550 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 7
 pitch_value = 10
 
-[node name="B0_8" parent="Row2" unique_id=302783582 instance=ExtResource("1_n4t0j")]
+[node name="B0_8" parent="Sequencer/Row2" unique_id=302783582 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 8
 pitch_value = 10
 
-[node name="B0_9" parent="Row2" unique_id=1490749478 instance=ExtResource("1_n4t0j")]
+[node name="B0_9" parent="Sequencer/Row2" unique_id=1490749478 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 9
 pitch_value = 10
 
-[node name="B0_10" parent="Row2" unique_id=119624437 instance=ExtResource("1_n4t0j")]
+[node name="B0_10" parent="Sequencer/Row2" unique_id=119624437 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 10
 pitch_value = 10
 
-[node name="B0_11" parent="Row2" unique_id=1667155735 instance=ExtResource("1_n4t0j")]
+[node name="B0_11" parent="Sequencer/Row2" unique_id=1667155735 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 11
 pitch_value = 10
 
-[node name="B0_12" parent="Row2" unique_id=1430754439 instance=ExtResource("1_n4t0j")]
+[node name="B0_12" parent="Sequencer/Row2" unique_id=1430754439 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 12
 pitch_value = 10
 
-[node name="B0_13" parent="Row2" unique_id=345802410 instance=ExtResource("1_n4t0j")]
+[node name="B0_13" parent="Sequencer/Row2" unique_id=345802410 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 13
 pitch_value = 10
 
-[node name="B0_14" parent="Row2" unique_id=1183731933 instance=ExtResource("1_n4t0j")]
+[node name="B0_14" parent="Sequencer/Row2" unique_id=1183731933 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 14
 pitch_value = 10
 
-[node name="B0_15" parent="Row2" unique_id=1803976565 instance=ExtResource("1_n4t0j")]
+[node name="B0_15" parent="Sequencer/Row2" unique_id=1803976565 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 15
 pitch_value = 10
 
-[node name="Row3" type="HBoxContainer" parent="." unique_id=1409607927]
+[node name="Row3" type="HBoxContainer" parent="Sequencer" unique_id=1409607927]
 layout_mode = 2
 
-[node name="B0_0" parent="Row3" unique_id=959653003 instance=ExtResource("1_n4t0j")]
+[node name="B0_0" parent="Sequencer/Row3" unique_id=959653003 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 pitch_value = 9
 
-[node name="B0_1" parent="Row3" unique_id=1368753990 instance=ExtResource("1_n4t0j")]
+[node name="B0_1" parent="Sequencer/Row3" unique_id=1368753990 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 1
 pitch_value = 9
 
-[node name="B0_2" parent="Row3" unique_id=1684085579 instance=ExtResource("1_n4t0j")]
+[node name="B0_2" parent="Sequencer/Row3" unique_id=1684085579 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 2
 pitch_value = 9
 
-[node name="B0_3" parent="Row3" unique_id=401347043 instance=ExtResource("1_n4t0j")]
+[node name="B0_3" parent="Sequencer/Row3" unique_id=401347043 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 3
 pitch_value = 9
 
-[node name="B0_4" parent="Row3" unique_id=1634717519 instance=ExtResource("1_n4t0j")]
+[node name="B0_4" parent="Sequencer/Row3" unique_id=1634717519 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 4
 pitch_value = 9
 
-[node name="B0_5" parent="Row3" unique_id=1282772674 instance=ExtResource("1_n4t0j")]
+[node name="B0_5" parent="Sequencer/Row3" unique_id=1282772674 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 5
 pitch_value = 9
 
-[node name="B0_6" parent="Row3" unique_id=1069138101 instance=ExtResource("1_n4t0j")]
+[node name="B0_6" parent="Sequencer/Row3" unique_id=1069138101 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 6
 pitch_value = 9
 
-[node name="B0_7" parent="Row3" unique_id=398665144 instance=ExtResource("1_n4t0j")]
+[node name="B0_7" parent="Sequencer/Row3" unique_id=398665144 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 7
 pitch_value = 9
 
-[node name="B0_8" parent="Row3" unique_id=1156851136 instance=ExtResource("1_n4t0j")]
+[node name="B0_8" parent="Sequencer/Row3" unique_id=1156851136 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 8
 pitch_value = 9
 
-[node name="B0_9" parent="Row3" unique_id=255423895 instance=ExtResource("1_n4t0j")]
+[node name="B0_9" parent="Sequencer/Row3" unique_id=255423895 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 9
 pitch_value = 9
 
-[node name="B0_10" parent="Row3" unique_id=178792701 instance=ExtResource("1_n4t0j")]
+[node name="B0_10" parent="Sequencer/Row3" unique_id=178792701 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 10
 pitch_value = 9
 
-[node name="B0_11" parent="Row3" unique_id=265629576 instance=ExtResource("1_n4t0j")]
+[node name="B0_11" parent="Sequencer/Row3" unique_id=265629576 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 11
 pitch_value = 9
 
-[node name="B0_12" parent="Row3" unique_id=1093221623 instance=ExtResource("1_n4t0j")]
+[node name="B0_12" parent="Sequencer/Row3" unique_id=1093221623 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 12
 pitch_value = 9
 
-[node name="B0_13" parent="Row3" unique_id=2017508614 instance=ExtResource("1_n4t0j")]
+[node name="B0_13" parent="Sequencer/Row3" unique_id=2017508614 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 13
 pitch_value = 9
 
-[node name="B0_14" parent="Row3" unique_id=627107271 instance=ExtResource("1_n4t0j")]
+[node name="B0_14" parent="Sequencer/Row3" unique_id=627107271 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 14
 pitch_value = 9
 
-[node name="B0_15" parent="Row3" unique_id=1261989868 instance=ExtResource("1_n4t0j")]
+[node name="B0_15" parent="Sequencer/Row3" unique_id=1261989868 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 15
 pitch_value = 9
 
-[node name="Row4" type="HBoxContainer" parent="." unique_id=1713761590]
+[node name="Row4" type="HBoxContainer" parent="Sequencer" unique_id=1713761590]
 layout_mode = 2
 
-[node name="B0_0" parent="Row4" unique_id=801478601 instance=ExtResource("1_n4t0j")]
+[node name="B0_0" parent="Sequencer/Row4" unique_id=801478601 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 pitch_value = 8
 
-[node name="B0_1" parent="Row4" unique_id=728532379 instance=ExtResource("1_n4t0j")]
+[node name="B0_1" parent="Sequencer/Row4" unique_id=728532379 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 1
 pitch_value = 8
 
-[node name="B0_2" parent="Row4" unique_id=1367201184 instance=ExtResource("1_n4t0j")]
+[node name="B0_2" parent="Sequencer/Row4" unique_id=1367201184 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 2
 pitch_value = 8
 
-[node name="B0_3" parent="Row4" unique_id=463006616 instance=ExtResource("1_n4t0j")]
+[node name="B0_3" parent="Sequencer/Row4" unique_id=463006616 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 3
 pitch_value = 8
 
-[node name="B0_4" parent="Row4" unique_id=767159062 instance=ExtResource("1_n4t0j")]
+[node name="B0_4" parent="Sequencer/Row4" unique_id=767159062 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 4
 pitch_value = 8
 
-[node name="B0_5" parent="Row4" unique_id=1097744016 instance=ExtResource("1_n4t0j")]
+[node name="B0_5" parent="Sequencer/Row4" unique_id=1097744016 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 5
 pitch_value = 8
 
-[node name="B0_6" parent="Row4" unique_id=1736720742 instance=ExtResource("1_n4t0j")]
+[node name="B0_6" parent="Sequencer/Row4" unique_id=1736720742 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 6
 pitch_value = 8
 
-[node name="B0_7" parent="Row4" unique_id=360273656 instance=ExtResource("1_n4t0j")]
+[node name="B0_7" parent="Sequencer/Row4" unique_id=360273656 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 7
 pitch_value = 8
 
-[node name="B0_8" parent="Row4" unique_id=1972046703 instance=ExtResource("1_n4t0j")]
+[node name="B0_8" parent="Sequencer/Row4" unique_id=1972046703 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 8
 pitch_value = 8
 
-[node name="B0_9" parent="Row4" unique_id=627883541 instance=ExtResource("1_n4t0j")]
+[node name="B0_9" parent="Sequencer/Row4" unique_id=627883541 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 9
 pitch_value = 8
 
-[node name="B0_10" parent="Row4" unique_id=1437098374 instance=ExtResource("1_n4t0j")]
+[node name="B0_10" parent="Sequencer/Row4" unique_id=1437098374 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 10
 pitch_value = 8
 
-[node name="B0_11" parent="Row4" unique_id=1229891256 instance=ExtResource("1_n4t0j")]
+[node name="B0_11" parent="Sequencer/Row4" unique_id=1229891256 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 11
 pitch_value = 8
 
-[node name="B0_12" parent="Row4" unique_id=1210052532 instance=ExtResource("1_n4t0j")]
+[node name="B0_12" parent="Sequencer/Row4" unique_id=1210052532 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 12
 pitch_value = 8
 
-[node name="B0_13" parent="Row4" unique_id=1829803108 instance=ExtResource("1_n4t0j")]
+[node name="B0_13" parent="Sequencer/Row4" unique_id=1829803108 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 13
 pitch_value = 8
 
-[node name="B0_14" parent="Row4" unique_id=70545331 instance=ExtResource("1_n4t0j")]
+[node name="B0_14" parent="Sequencer/Row4" unique_id=70545331 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 14
 pitch_value = 8
 
-[node name="B0_15" parent="Row4" unique_id=1049637340 instance=ExtResource("1_n4t0j")]
+[node name="B0_15" parent="Sequencer/Row4" unique_id=1049637340 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 15
 pitch_value = 8
 
-[node name="Row5" type="HBoxContainer" parent="." unique_id=98353326]
+[node name="Row5" type="HBoxContainer" parent="Sequencer" unique_id=98353326]
 layout_mode = 2
 
-[node name="B0_0" parent="Row5" unique_id=652388536 instance=ExtResource("1_n4t0j")]
+[node name="B0_0" parent="Sequencer/Row5" unique_id=652388536 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 pitch_value = 7
 
-[node name="B0_1" parent="Row5" unique_id=575626329 instance=ExtResource("1_n4t0j")]
+[node name="B0_1" parent="Sequencer/Row5" unique_id=575626329 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 1
 pitch_value = 7
 
-[node name="B0_2" parent="Row5" unique_id=1375136567 instance=ExtResource("1_n4t0j")]
+[node name="B0_2" parent="Sequencer/Row5" unique_id=1375136567 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 2
 pitch_value = 7
 
-[node name="B0_3" parent="Row5" unique_id=1472764986 instance=ExtResource("1_n4t0j")]
+[node name="B0_3" parent="Sequencer/Row5" unique_id=1472764986 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 3
 pitch_value = 7
 
-[node name="B0_4" parent="Row5" unique_id=1479623968 instance=ExtResource("1_n4t0j")]
+[node name="B0_4" parent="Sequencer/Row5" unique_id=1479623968 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 4
 pitch_value = 7
 
-[node name="B0_5" parent="Row5" unique_id=1966102085 instance=ExtResource("1_n4t0j")]
+[node name="B0_5" parent="Sequencer/Row5" unique_id=1966102085 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 5
 pitch_value = 7
 
-[node name="B0_6" parent="Row5" unique_id=1178353731 instance=ExtResource("1_n4t0j")]
+[node name="B0_6" parent="Sequencer/Row5" unique_id=1178353731 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 6
 pitch_value = 7
 
-[node name="B0_7" parent="Row5" unique_id=369602791 instance=ExtResource("1_n4t0j")]
+[node name="B0_7" parent="Sequencer/Row5" unique_id=369602791 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 7
 pitch_value = 7
 
-[node name="B0_8" parent="Row5" unique_id=922033579 instance=ExtResource("1_n4t0j")]
+[node name="B0_8" parent="Sequencer/Row5" unique_id=922033579 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 8
 pitch_value = 7
 
-[node name="B0_9" parent="Row5" unique_id=790111803 instance=ExtResource("1_n4t0j")]
+[node name="B0_9" parent="Sequencer/Row5" unique_id=790111803 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 9
 pitch_value = 7
 
-[node name="B0_10" parent="Row5" unique_id=1741053374 instance=ExtResource("1_n4t0j")]
+[node name="B0_10" parent="Sequencer/Row5" unique_id=1741053374 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 10
 pitch_value = 7
 
-[node name="B0_11" parent="Row5" unique_id=942204487 instance=ExtResource("1_n4t0j")]
+[node name="B0_11" parent="Sequencer/Row5" unique_id=942204487 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 11
 pitch_value = 7
 
-[node name="B0_12" parent="Row5" unique_id=1936821396 instance=ExtResource("1_n4t0j")]
+[node name="B0_12" parent="Sequencer/Row5" unique_id=1936821396 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 12
 pitch_value = 7
 
-[node name="B0_13" parent="Row5" unique_id=1485161539 instance=ExtResource("1_n4t0j")]
+[node name="B0_13" parent="Sequencer/Row5" unique_id=1485161539 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 13
 pitch_value = 7
 
-[node name="B0_14" parent="Row5" unique_id=738159622 instance=ExtResource("1_n4t0j")]
+[node name="B0_14" parent="Sequencer/Row5" unique_id=738159622 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 14
 pitch_value = 7
 
-[node name="B0_15" parent="Row5" unique_id=1607765218 instance=ExtResource("1_n4t0j")]
+[node name="B0_15" parent="Sequencer/Row5" unique_id=1607765218 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 15
 pitch_value = 7
 
-[node name="Row6" type="HBoxContainer" parent="." unique_id=1441748972]
+[node name="Row6" type="HBoxContainer" parent="Sequencer" unique_id=1441748972]
 layout_mode = 2
 
-[node name="B0_0" parent="Row6" unique_id=927599116 instance=ExtResource("1_n4t0j")]
+[node name="B0_0" parent="Sequencer/Row6" unique_id=927599116 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 pitch_value = 6
 
-[node name="B0_1" parent="Row6" unique_id=283139482 instance=ExtResource("1_n4t0j")]
+[node name="B0_1" parent="Sequencer/Row6" unique_id=283139482 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 1
 pitch_value = 6
 
-[node name="B0_2" parent="Row6" unique_id=1951405656 instance=ExtResource("1_n4t0j")]
+[node name="B0_2" parent="Sequencer/Row6" unique_id=1951405656 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 2
 pitch_value = 6
 
-[node name="B0_3" parent="Row6" unique_id=78157690 instance=ExtResource("1_n4t0j")]
+[node name="B0_3" parent="Sequencer/Row6" unique_id=78157690 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 3
 pitch_value = 6
 
-[node name="B0_4" parent="Row6" unique_id=1424745697 instance=ExtResource("1_n4t0j")]
+[node name="B0_4" parent="Sequencer/Row6" unique_id=1424745697 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 4
 pitch_value = 6
 
-[node name="B0_5" parent="Row6" unique_id=278151282 instance=ExtResource("1_n4t0j")]
+[node name="B0_5" parent="Sequencer/Row6" unique_id=278151282 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 5
 pitch_value = 6
 
-[node name="B0_6" parent="Row6" unique_id=1188300056 instance=ExtResource("1_n4t0j")]
+[node name="B0_6" parent="Sequencer/Row6" unique_id=1188300056 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 6
 pitch_value = 6
 
-[node name="B0_7" parent="Row6" unique_id=1571970464 instance=ExtResource("1_n4t0j")]
+[node name="B0_7" parent="Sequencer/Row6" unique_id=1571970464 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 7
 pitch_value = 6
 
-[node name="B0_8" parent="Row6" unique_id=1843621343 instance=ExtResource("1_n4t0j")]
+[node name="B0_8" parent="Sequencer/Row6" unique_id=1843621343 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 8
 pitch_value = 6
 
-[node name="B0_9" parent="Row6" unique_id=1623710076 instance=ExtResource("1_n4t0j")]
+[node name="B0_9" parent="Sequencer/Row6" unique_id=1623710076 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 9
 pitch_value = 6
 
-[node name="B0_10" parent="Row6" unique_id=321096810 instance=ExtResource("1_n4t0j")]
+[node name="B0_10" parent="Sequencer/Row6" unique_id=321096810 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 10
 pitch_value = 6
 
-[node name="B0_11" parent="Row6" unique_id=107376939 instance=ExtResource("1_n4t0j")]
+[node name="B0_11" parent="Sequencer/Row6" unique_id=107376939 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 11
 pitch_value = 6
 
-[node name="B0_12" parent="Row6" unique_id=980627620 instance=ExtResource("1_n4t0j")]
+[node name="B0_12" parent="Sequencer/Row6" unique_id=980627620 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 12
 pitch_value = 6
 
-[node name="B0_13" parent="Row6" unique_id=915994825 instance=ExtResource("1_n4t0j")]
+[node name="B0_13" parent="Sequencer/Row6" unique_id=915994825 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 13
 pitch_value = 6
 
-[node name="B0_14" parent="Row6" unique_id=803631422 instance=ExtResource("1_n4t0j")]
+[node name="B0_14" parent="Sequencer/Row6" unique_id=803631422 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 14
 pitch_value = 6
 
-[node name="B0_15" parent="Row6" unique_id=2125245975 instance=ExtResource("1_n4t0j")]
+[node name="B0_15" parent="Sequencer/Row6" unique_id=2125245975 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 15
 pitch_value = 6
 
-[node name="Row7" type="HBoxContainer" parent="." unique_id=20176954]
+[node name="Row7" type="HBoxContainer" parent="Sequencer" unique_id=20176954]
 layout_mode = 2
 
-[node name="B0_0" parent="Row7" unique_id=802589285 instance=ExtResource("1_n4t0j")]
+[node name="B0_0" parent="Sequencer/Row7" unique_id=802589285 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 pitch_value = 5
 
-[node name="B0_1" parent="Row7" unique_id=1360931497 instance=ExtResource("1_n4t0j")]
+[node name="B0_1" parent="Sequencer/Row7" unique_id=1360931497 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 1
 pitch_value = 5
 
-[node name="B0_2" parent="Row7" unique_id=1943556925 instance=ExtResource("1_n4t0j")]
+[node name="B0_2" parent="Sequencer/Row7" unique_id=1943556925 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 2
 pitch_value = 5
 
-[node name="B0_3" parent="Row7" unique_id=1814741772 instance=ExtResource("1_n4t0j")]
+[node name="B0_3" parent="Sequencer/Row7" unique_id=1814741772 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 3
 pitch_value = 5
 
-[node name="B0_4" parent="Row7" unique_id=2125543833 instance=ExtResource("1_n4t0j")]
+[node name="B0_4" parent="Sequencer/Row7" unique_id=2125543833 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 4
 pitch_value = 5
 
-[node name="B0_5" parent="Row7" unique_id=753758267 instance=ExtResource("1_n4t0j")]
+[node name="B0_5" parent="Sequencer/Row7" unique_id=753758267 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 5
 pitch_value = 5
 
-[node name="B0_6" parent="Row7" unique_id=985571452 instance=ExtResource("1_n4t0j")]
+[node name="B0_6" parent="Sequencer/Row7" unique_id=985571452 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 6
 pitch_value = 5
 
-[node name="B0_7" parent="Row7" unique_id=53648118 instance=ExtResource("1_n4t0j")]
+[node name="B0_7" parent="Sequencer/Row7" unique_id=53648118 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 7
 pitch_value = 5
 
-[node name="B0_8" parent="Row7" unique_id=501225756 instance=ExtResource("1_n4t0j")]
+[node name="B0_8" parent="Sequencer/Row7" unique_id=501225756 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 8
 pitch_value = 5
 
-[node name="B0_9" parent="Row7" unique_id=1154413979 instance=ExtResource("1_n4t0j")]
+[node name="B0_9" parent="Sequencer/Row7" unique_id=1154413979 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 9
 pitch_value = 5
 
-[node name="B0_10" parent="Row7" unique_id=473567459 instance=ExtResource("1_n4t0j")]
+[node name="B0_10" parent="Sequencer/Row7" unique_id=473567459 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 10
 pitch_value = 5
 
-[node name="B0_11" parent="Row7" unique_id=1591970729 instance=ExtResource("1_n4t0j")]
+[node name="B0_11" parent="Sequencer/Row7" unique_id=1591970729 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 11
 pitch_value = 5
 
-[node name="B0_12" parent="Row7" unique_id=1157269366 instance=ExtResource("1_n4t0j")]
+[node name="B0_12" parent="Sequencer/Row7" unique_id=1157269366 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 12
 pitch_value = 5
 
-[node name="B0_13" parent="Row7" unique_id=1464604937 instance=ExtResource("1_n4t0j")]
+[node name="B0_13" parent="Sequencer/Row7" unique_id=1464604937 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 13
 pitch_value = 5
 
-[node name="B0_14" parent="Row7" unique_id=759206897 instance=ExtResource("1_n4t0j")]
+[node name="B0_14" parent="Sequencer/Row7" unique_id=759206897 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 14
 pitch_value = 5
 
-[node name="B0_15" parent="Row7" unique_id=1959543908 instance=ExtResource("1_n4t0j")]
+[node name="B0_15" parent="Sequencer/Row7" unique_id=1959543908 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 15
 pitch_value = 5
 
-[node name="Row8" type="HBoxContainer" parent="." unique_id=2031858519]
+[node name="Row8" type="HBoxContainer" parent="Sequencer" unique_id=2031858519]
 layout_mode = 2
 
-[node name="B0_0" parent="Row8" unique_id=546370798 instance=ExtResource("1_n4t0j")]
+[node name="B0_0" parent="Sequencer/Row8" unique_id=546370798 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 pitch_value = 4
 
-[node name="B0_1" parent="Row8" unique_id=818522792 instance=ExtResource("1_n4t0j")]
+[node name="B0_1" parent="Sequencer/Row8" unique_id=818522792 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 1
 pitch_value = 4
 
-[node name="B0_2" parent="Row8" unique_id=979609785 instance=ExtResource("1_n4t0j")]
+[node name="B0_2" parent="Sequencer/Row8" unique_id=979609785 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 2
 pitch_value = 4
 
-[node name="B0_3" parent="Row8" unique_id=1993868813 instance=ExtResource("1_n4t0j")]
+[node name="B0_3" parent="Sequencer/Row8" unique_id=1993868813 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 3
 pitch_value = 4
 
-[node name="B0_4" parent="Row8" unique_id=1157019499 instance=ExtResource("1_n4t0j")]
+[node name="B0_4" parent="Sequencer/Row8" unique_id=1157019499 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 4
 pitch_value = 4
 
-[node name="B0_5" parent="Row8" unique_id=1828277769 instance=ExtResource("1_n4t0j")]
+[node name="B0_5" parent="Sequencer/Row8" unique_id=1828277769 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 5
 pitch_value = 4
 
-[node name="B0_6" parent="Row8" unique_id=31814857 instance=ExtResource("1_n4t0j")]
+[node name="B0_6" parent="Sequencer/Row8" unique_id=31814857 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 6
 pitch_value = 4
 
-[node name="B0_7" parent="Row8" unique_id=1009587953 instance=ExtResource("1_n4t0j")]
+[node name="B0_7" parent="Sequencer/Row8" unique_id=1009587953 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 7
 pitch_value = 4
 
-[node name="B0_8" parent="Row8" unique_id=1547171448 instance=ExtResource("1_n4t0j")]
+[node name="B0_8" parent="Sequencer/Row8" unique_id=1547171448 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 8
 pitch_value = 4
 
-[node name="B0_9" parent="Row8" unique_id=947181658 instance=ExtResource("1_n4t0j")]
+[node name="B0_9" parent="Sequencer/Row8" unique_id=947181658 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 9
 pitch_value = 4
 
-[node name="B0_10" parent="Row8" unique_id=1756277447 instance=ExtResource("1_n4t0j")]
+[node name="B0_10" parent="Sequencer/Row8" unique_id=1756277447 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 10
 pitch_value = 4
 
-[node name="B0_11" parent="Row8" unique_id=218343014 instance=ExtResource("1_n4t0j")]
+[node name="B0_11" parent="Sequencer/Row8" unique_id=218343014 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 11
 pitch_value = 4
 
-[node name="B0_12" parent="Row8" unique_id=975112338 instance=ExtResource("1_n4t0j")]
+[node name="B0_12" parent="Sequencer/Row8" unique_id=975112338 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 12
 pitch_value = 4
 
-[node name="B0_13" parent="Row8" unique_id=659539753 instance=ExtResource("1_n4t0j")]
+[node name="B0_13" parent="Sequencer/Row8" unique_id=659539753 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 13
 pitch_value = 4
 
-[node name="B0_14" parent="Row8" unique_id=136701093 instance=ExtResource("1_n4t0j")]
+[node name="B0_14" parent="Sequencer/Row8" unique_id=136701093 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 14
 pitch_value = 4
 
-[node name="B0_15" parent="Row8" unique_id=285179784 instance=ExtResource("1_n4t0j")]
+[node name="B0_15" parent="Sequencer/Row8" unique_id=285179784 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 15
 pitch_value = 4
 
-[node name="Row9" type="HBoxContainer" parent="." unique_id=1953587485]
+[node name="Row9" type="HBoxContainer" parent="Sequencer" unique_id=1953587485]
 layout_mode = 2
 
-[node name="B0_0" parent="Row9" unique_id=619843858 instance=ExtResource("1_n4t0j")]
+[node name="B0_0" parent="Sequencer/Row9" unique_id=619843858 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 pitch_value = 3
 
-[node name="B0_1" parent="Row9" unique_id=2134934091 instance=ExtResource("1_n4t0j")]
+[node name="B0_1" parent="Sequencer/Row9" unique_id=2134934091 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 1
 pitch_value = 3
 
-[node name="B0_2" parent="Row9" unique_id=896827600 instance=ExtResource("1_n4t0j")]
+[node name="B0_2" parent="Sequencer/Row9" unique_id=896827600 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 2
 pitch_value = 3
 
-[node name="B0_3" parent="Row9" unique_id=1143113291 instance=ExtResource("1_n4t0j")]
+[node name="B0_3" parent="Sequencer/Row9" unique_id=1143113291 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 3
 pitch_value = 3
 
-[node name="B0_4" parent="Row9" unique_id=1875504142 instance=ExtResource("1_n4t0j")]
+[node name="B0_4" parent="Sequencer/Row9" unique_id=1875504142 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 4
 pitch_value = 3
 
-[node name="B0_5" parent="Row9" unique_id=1735716871 instance=ExtResource("1_n4t0j")]
+[node name="B0_5" parent="Sequencer/Row9" unique_id=1735716871 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 5
 pitch_value = 3
 
-[node name="B0_6" parent="Row9" unique_id=1257534742 instance=ExtResource("1_n4t0j")]
+[node name="B0_6" parent="Sequencer/Row9" unique_id=1257534742 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 6
 pitch_value = 3
 
-[node name="B0_7" parent="Row9" unique_id=2137252313 instance=ExtResource("1_n4t0j")]
+[node name="B0_7" parent="Sequencer/Row9" unique_id=2137252313 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 7
 pitch_value = 3
 
-[node name="B0_8" parent="Row9" unique_id=919805757 instance=ExtResource("1_n4t0j")]
+[node name="B0_8" parent="Sequencer/Row9" unique_id=919805757 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 8
 pitch_value = 3
 
-[node name="B0_9" parent="Row9" unique_id=1063355688 instance=ExtResource("1_n4t0j")]
+[node name="B0_9" parent="Sequencer/Row9" unique_id=1063355688 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 9
 pitch_value = 3
 
-[node name="B0_10" parent="Row9" unique_id=1175002876 instance=ExtResource("1_n4t0j")]
+[node name="B0_10" parent="Sequencer/Row9" unique_id=1175002876 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 10
 pitch_value = 3
 
-[node name="B0_11" parent="Row9" unique_id=88207698 instance=ExtResource("1_n4t0j")]
+[node name="B0_11" parent="Sequencer/Row9" unique_id=88207698 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 11
 pitch_value = 3
 
-[node name="B0_12" parent="Row9" unique_id=873590489 instance=ExtResource("1_n4t0j")]
+[node name="B0_12" parent="Sequencer/Row9" unique_id=873590489 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 12
 pitch_value = 3
 
-[node name="B0_13" parent="Row9" unique_id=1504667424 instance=ExtResource("1_n4t0j")]
+[node name="B0_13" parent="Sequencer/Row9" unique_id=1504667424 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 13
 pitch_value = 3
 
-[node name="B0_14" parent="Row9" unique_id=1889847463 instance=ExtResource("1_n4t0j")]
+[node name="B0_14" parent="Sequencer/Row9" unique_id=1889847463 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 14
 pitch_value = 3
 
-[node name="B0_15" parent="Row9" unique_id=1064088953 instance=ExtResource("1_n4t0j")]
+[node name="B0_15" parent="Sequencer/Row9" unique_id=1064088953 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 15
 pitch_value = 3
 
-[node name="Row10" type="HBoxContainer" parent="." unique_id=1642081035]
+[node name="Row10" type="HBoxContainer" parent="Sequencer" unique_id=1642081035]
 layout_mode = 2
 
-[node name="B0_0" parent="Row10" unique_id=761442932 instance=ExtResource("1_n4t0j")]
+[node name="B0_0" parent="Sequencer/Row10" unique_id=761442932 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 pitch_value = 2
 
-[node name="B0_1" parent="Row10" unique_id=1772974457 instance=ExtResource("1_n4t0j")]
+[node name="B0_1" parent="Sequencer/Row10" unique_id=1772974457 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 1
 pitch_value = 2
 
-[node name="B0_2" parent="Row10" unique_id=971420734 instance=ExtResource("1_n4t0j")]
+[node name="B0_2" parent="Sequencer/Row10" unique_id=971420734 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 2
 pitch_value = 2
 
-[node name="B0_3" parent="Row10" unique_id=1375240640 instance=ExtResource("1_n4t0j")]
+[node name="B0_3" parent="Sequencer/Row10" unique_id=1375240640 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 3
 pitch_value = 2
 
-[node name="B0_4" parent="Row10" unique_id=590602392 instance=ExtResource("1_n4t0j")]
+[node name="B0_4" parent="Sequencer/Row10" unique_id=590602392 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 4
 pitch_value = 2
 
-[node name="B0_5" parent="Row10" unique_id=2067618064 instance=ExtResource("1_n4t0j")]
+[node name="B0_5" parent="Sequencer/Row10" unique_id=2067618064 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 5
 pitch_value = 2
 
-[node name="B0_6" parent="Row10" unique_id=827478026 instance=ExtResource("1_n4t0j")]
+[node name="B0_6" parent="Sequencer/Row10" unique_id=827478026 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 6
 pitch_value = 2
 
-[node name="B0_7" parent="Row10" unique_id=1495843062 instance=ExtResource("1_n4t0j")]
+[node name="B0_7" parent="Sequencer/Row10" unique_id=1495843062 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 7
 pitch_value = 2
 
-[node name="B0_8" parent="Row10" unique_id=1427775467 instance=ExtResource("1_n4t0j")]
+[node name="B0_8" parent="Sequencer/Row10" unique_id=1427775467 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 8
 pitch_value = 2
 
-[node name="B0_9" parent="Row10" unique_id=898268499 instance=ExtResource("1_n4t0j")]
+[node name="B0_9" parent="Sequencer/Row10" unique_id=898268499 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 9
 pitch_value = 2
 
-[node name="B0_10" parent="Row10" unique_id=1498027362 instance=ExtResource("1_n4t0j")]
+[node name="B0_10" parent="Sequencer/Row10" unique_id=1498027362 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 10
 pitch_value = 2
 
-[node name="B0_11" parent="Row10" unique_id=1865738703 instance=ExtResource("1_n4t0j")]
+[node name="B0_11" parent="Sequencer/Row10" unique_id=1865738703 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 11
 pitch_value = 2
 
-[node name="B0_12" parent="Row10" unique_id=2087775977 instance=ExtResource("1_n4t0j")]
+[node name="B0_12" parent="Sequencer/Row10" unique_id=2087775977 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 12
 pitch_value = 2
 
-[node name="B0_13" parent="Row10" unique_id=1543158414 instance=ExtResource("1_n4t0j")]
+[node name="B0_13" parent="Sequencer/Row10" unique_id=1543158414 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 13
 pitch_value = 2
 
-[node name="B0_14" parent="Row10" unique_id=2103411409 instance=ExtResource("1_n4t0j")]
+[node name="B0_14" parent="Sequencer/Row10" unique_id=2103411409 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 14
 pitch_value = 2
 
-[node name="B0_15" parent="Row10" unique_id=567622151 instance=ExtResource("1_n4t0j")]
+[node name="B0_15" parent="Sequencer/Row10" unique_id=567622151 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 15
 pitch_value = 2
 
-[node name="Row11" type="HBoxContainer" parent="." unique_id=2013101727]
+[node name="Row11" type="HBoxContainer" parent="Sequencer" unique_id=2013101727]
 layout_mode = 2
 
-[node name="B0_0" parent="Row11" unique_id=361740651 instance=ExtResource("1_n4t0j")]
+[node name="B0_0" parent="Sequencer/Row11" unique_id=361740651 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 pitch_value = 1
 
-[node name="B0_1" parent="Row11" unique_id=424825754 instance=ExtResource("1_n4t0j")]
+[node name="B0_1" parent="Sequencer/Row11" unique_id=424825754 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 1
 pitch_value = 1
 
-[node name="B0_2" parent="Row11" unique_id=979755925 instance=ExtResource("1_n4t0j")]
+[node name="B0_2" parent="Sequencer/Row11" unique_id=979755925 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 2
 pitch_value = 1
 
-[node name="B0_3" parent="Row11" unique_id=1541619355 instance=ExtResource("1_n4t0j")]
+[node name="B0_3" parent="Sequencer/Row11" unique_id=1541619355 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 3
 pitch_value = 1
 
-[node name="B0_4" parent="Row11" unique_id=455413415 instance=ExtResource("1_n4t0j")]
+[node name="B0_4" parent="Sequencer/Row11" unique_id=455413415 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 4
 pitch_value = 1
 
-[node name="B0_5" parent="Row11" unique_id=919402377 instance=ExtResource("1_n4t0j")]
+[node name="B0_5" parent="Sequencer/Row11" unique_id=919402377 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 5
 pitch_value = 1
 
-[node name="B0_6" parent="Row11" unique_id=1762770502 instance=ExtResource("1_n4t0j")]
+[node name="B0_6" parent="Sequencer/Row11" unique_id=1762770502 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 6
 pitch_value = 1
 
-[node name="B0_7" parent="Row11" unique_id=1911455172 instance=ExtResource("1_n4t0j")]
+[node name="B0_7" parent="Sequencer/Row11" unique_id=1911455172 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 7
 pitch_value = 1
 
-[node name="B0_8" parent="Row11" unique_id=878292241 instance=ExtResource("1_n4t0j")]
+[node name="B0_8" parent="Sequencer/Row11" unique_id=878292241 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 8
 pitch_value = 1
 
-[node name="B0_9" parent="Row11" unique_id=1189840274 instance=ExtResource("1_n4t0j")]
+[node name="B0_9" parent="Sequencer/Row11" unique_id=1189840274 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 9
 pitch_value = 1
 
-[node name="B0_10" parent="Row11" unique_id=694936484 instance=ExtResource("1_n4t0j")]
+[node name="B0_10" parent="Sequencer/Row11" unique_id=694936484 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 10
 pitch_value = 1
 
-[node name="B0_11" parent="Row11" unique_id=1431018235 instance=ExtResource("1_n4t0j")]
+[node name="B0_11" parent="Sequencer/Row11" unique_id=1431018235 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 11
 pitch_value = 1
 
-[node name="B0_12" parent="Row11" unique_id=1840332768 instance=ExtResource("1_n4t0j")]
+[node name="B0_12" parent="Sequencer/Row11" unique_id=1840332768 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 12
 pitch_value = 1
 
-[node name="B0_13" parent="Row11" unique_id=845274370 instance=ExtResource("1_n4t0j")]
+[node name="B0_13" parent="Sequencer/Row11" unique_id=845274370 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 13
 pitch_value = 1
 
-[node name="B0_14" parent="Row11" unique_id=1578992517 instance=ExtResource("1_n4t0j")]
+[node name="B0_14" parent="Sequencer/Row11" unique_id=1578992517 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 14
 pitch_value = 1
 
-[node name="B0_15" parent="Row11" unique_id=1618251604 instance=ExtResource("1_n4t0j")]
+[node name="B0_15" parent="Sequencer/Row11" unique_id=1618251604 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 15
 pitch_value = 1
 
-[node name="Row12" type="HBoxContainer" parent="." unique_id=1885666381]
+[node name="Row12" type="HBoxContainer" parent="Sequencer" unique_id=1885666381]
 layout_mode = 2
 
-[node name="B0_0" parent="Row12" unique_id=1081117247 instance=ExtResource("1_n4t0j")]
+[node name="B0_0" parent="Sequencer/Row12" unique_id=1081117247 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 
-[node name="B0_1" parent="Row12" unique_id=236082137 instance=ExtResource("1_n4t0j")]
+[node name="B0_1" parent="Sequencer/Row12" unique_id=236082137 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 1
 
-[node name="B0_2" parent="Row12" unique_id=190263341 instance=ExtResource("1_n4t0j")]
+[node name="B0_2" parent="Sequencer/Row12" unique_id=190263341 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 2
 
-[node name="B0_3" parent="Row12" unique_id=1313844846 instance=ExtResource("1_n4t0j")]
+[node name="B0_3" parent="Sequencer/Row12" unique_id=1313844846 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 3
 
-[node name="B0_4" parent="Row12" unique_id=2065071547 instance=ExtResource("1_n4t0j")]
+[node name="B0_4" parent="Sequencer/Row12" unique_id=2065071547 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 4
 
-[node name="B0_5" parent="Row12" unique_id=671506224 instance=ExtResource("1_n4t0j")]
+[node name="B0_5" parent="Sequencer/Row12" unique_id=671506224 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 5
 
-[node name="B0_6" parent="Row12" unique_id=1199928700 instance=ExtResource("1_n4t0j")]
+[node name="B0_6" parent="Sequencer/Row12" unique_id=1199928700 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 6
 
-[node name="B0_7" parent="Row12" unique_id=2084949936 instance=ExtResource("1_n4t0j")]
+[node name="B0_7" parent="Sequencer/Row12" unique_id=2084949936 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 7
 
-[node name="B0_8" parent="Row12" unique_id=1604439423 instance=ExtResource("1_n4t0j")]
+[node name="B0_8" parent="Sequencer/Row12" unique_id=1604439423 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 8
 
-[node name="B0_9" parent="Row12" unique_id=94390378 instance=ExtResource("1_n4t0j")]
+[node name="B0_9" parent="Sequencer/Row12" unique_id=94390378 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 9
 
-[node name="B0_10" parent="Row12" unique_id=1638169780 instance=ExtResource("1_n4t0j")]
+[node name="B0_10" parent="Sequencer/Row12" unique_id=1638169780 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 10
 
-[node name="B0_11" parent="Row12" unique_id=1595113326 instance=ExtResource("1_n4t0j")]
+[node name="B0_11" parent="Sequencer/Row12" unique_id=1595113326 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 11
 
-[node name="B0_12" parent="Row12" unique_id=2120924873 instance=ExtResource("1_n4t0j")]
+[node name="B0_12" parent="Sequencer/Row12" unique_id=2120924873 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 12
 
-[node name="B0_13" parent="Row12" unique_id=2033870462 instance=ExtResource("1_n4t0j")]
+[node name="B0_13" parent="Sequencer/Row12" unique_id=2033870462 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 13
 
-[node name="B0_14" parent="Row12" unique_id=943519152 instance=ExtResource("1_n4t0j")]
+[node name="B0_14" parent="Sequencer/Row12" unique_id=943519152 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 14
 
-[node name="B0_15" parent="Row12" unique_id=843464779 instance=ExtResource("1_n4t0j")]
+[node name="B0_15" parent="Sequencer/Row12" unique_id=843464779 instance=ExtResource("1_n4t0j")]
 layout_mode = 2
 step_id = 15
+
+[connection signal="item_selected" from="HBoxContainer/Instrument" to="." method="_on_instrument_item_selected"]

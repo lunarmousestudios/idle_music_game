@@ -3,6 +3,7 @@ extends Node
 signal ScoreUpdated(score:int)
 
 var score: int = 0
+var sequencers:Dictionary[int,Sequencer] = {}
 
 func _ready():
 	load_game()
@@ -12,6 +13,8 @@ func add_score(value:int) -> void:
 	score += value
 	ScoreUpdated.emit(score)
 
+func add_sequencer(id:int, seq:Sequencer) -> void:
+	sequencers[id] = seq
 
 func auto_save():
 	await get_tree().create_timer(30).timeout

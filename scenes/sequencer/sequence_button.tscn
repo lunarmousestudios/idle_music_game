@@ -2,6 +2,29 @@
 
 [ext_resource type="Script" uid="uid://o5onfimjnbm" path="res://scenes/sequencer/sequence_button.gd" id="1_s6jtf"]
 
+[sub_resource type="Shader" id="Shader_s6jtf"]
+code = "shader_type canvas_item;
+
+uniform vec4 flash_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float flash_amount : hint_range(0.0, 1.0) = 0.0;
+// Higher = faster initial drop-off, more \"punchy\" like a kick drum
+uniform float curve : hint_range(0.5, 4.0) = 2.0;
+
+void fragment() {
+	float a = pow(flash_amount, curve);
+	COLOR = vec4(flash_color.rgb, flash_color.a * a);
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y5pnp"]
+resource_local_to_scene = true
+shader = SubResource("Shader_s6jtf")
+shader_parameter/flash_color = Color(0.7010034, 0.32222775, 2.8878452e-07, 1)
+shader_parameter/flash_amount = 0.0
+shader_parameter/curve = 2.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_s6jtf"]
+
 [node name="SequenceButton" type="Button" unique_id=896309173]
 custom_minimum_size = Vector2(32, 32)
 offset_right = 32.0
@@ -10,8 +33,18 @@ toggle_mode = true
 script = ExtResource("1_s6jtf")
 
 [node name="Flash" type="ColorRect" parent="." unique_id=687349162]
-visible = false
+material = SubResource("ShaderMaterial_y5pnp")
 layout_mode = 0
 offset_right = 32.0
 offset_bottom = 32.0
+mouse_filter = 2
 color = Color(1, 0.3633125, 0.37417388, 1)
+
+[node name="Score" type="Label" parent="." unique_id=1353212779]
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 32.0
+text = "+1"
+label_settings = SubResource("LabelSettings_s6jtf")
+horizontal_alignment = 1
+vertical_alignment = 1
