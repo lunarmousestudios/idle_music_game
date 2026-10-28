@@ -4,6 +4,7 @@ extends Control
 
 @onready var cowbell: AudioStream = load("res://assets/audio/instruments/cowbell__1_forte_undamped.mp3")
 @onready var guitar: AudioStream = load("res://assets/audio/instruments/guitar_C4_very-long_forte_normal.mp3")
+@onready var drum: AudioStream = load("res://assets/audio/instruments/bass-drum__1_fortissimo_struck-singly.mp3")
 
 var cur_stream = 0
 
@@ -23,4 +24,6 @@ func get_instrument(instrument:AudioEvents.Instrument) -> AudioStream:
 			return cowbell
 		AudioEvents.Instrument.GUITAR:
 			return guitar
+		AudioEvents.Instrument.DRUM:
+			return drum
 	return cowbell

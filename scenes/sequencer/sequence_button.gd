@@ -1,4 +1,7 @@
 extends Button
+class_name SequencerButton
+
+signal PlaySound(pitchValue:AudioEvents.pitch)
 
 @onready var flash:ColorRect = $Flash
 @onready var score:Label = $Score
@@ -9,7 +12,7 @@ extends Button
 
 #@export var flash_color:Color = Color.ORANGE
 @export var flash_duration: float = 0.25
-@export var instrument:AudioEvents.Instrument = AudioEvents.Instrument.COWBELL
+#@export var instrument:AudioEvents.Instrument = AudioEvents.Instrument.COWBELL
 
 var _tween: Tween
 
@@ -18,7 +21,7 @@ var new_score_pos
 
 func _ready():
 	AudioEvents.SendStep.connect(activate)
-	AudioEvents.UpdateInstrument.connect(update_instrument)
+	#AudioEvents.UpdateInstrument.connect(update_instrument)
 	#flash.hide()
 	var mat := flash.material as ShaderMaterial
 	mat.set_shader_parameter("flash_color", AudioEvents.PITCH_COLOR[pitch_value])
@@ -32,7 +35,8 @@ func _ready():
 func activate(step:int):
 	if button_pressed and step_id == step:
 		#play a sound
-		AudioEvents.PlayAudio.emit(pitch_value, instrument)
+		#AudioEvents.PlayAudio.emit(pitch_value, instrument)
+		PlaySound.emit(pitch_value)
 		PlayerResources.add_score(1)
 		flash.show()
 		#await get_tree().create_timer(.25).timeout
@@ -59,10 +63,10 @@ func reset_score_pos() -> void:
 	score.hide()
 	score.position = orig_score_pos
 
-func update_instrument(_seq_id:int, _instrument:AudioEvents.Instrument):
-	var seq_tab:Sequencer_Tab = get_parent().get_parent().get_parent()
-	if seq_tab and _seq_id == seq_tab.id:
-		instrument = _instrument
+#func update_instrument(_seq_id:int, _instrument:AudioEvents.Instrument):
+	#var seq_tab:Sequencer_Tab = get_parent().get_parent().get_parent()
+	#if seq_tab and _seq_id == seq_tab.id:
+		#instrument = _instrument
 
 func _process(delta):
 	pass

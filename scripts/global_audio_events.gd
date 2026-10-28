@@ -6,7 +6,8 @@ signal UpdateInstrument(seq_id:int, instrument:AudioEvents.Instrument)
 
 enum Instrument{
 	COWBELL,
-	GUITAR
+	GUITAR,
+	DRUM,
 }
 
 enum pitch{

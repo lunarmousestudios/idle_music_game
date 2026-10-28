@@ -2,36 +2,79 @@
 
 [ext_resource type="Script" uid="uid://dto7b4odehn7q" path="res://scenes/main/main_scene.gd" id="1_dv3lr"]
 [ext_resource type="PackedScene" uid="uid://bqwb3jucxvjwd" path="res://scenes/audio_player/audio_pool.tscn" id="2_ubvhi"]
+[ext_resource type="Theme" uid="uid://bvi5vwg7piesp" path="res://assets/themes/base_theme.tres" id="3_24sno"]
 [ext_resource type="PackedScene" uid="uid://dw110bdmott74" path="res://scenes/sequencer/sequencer_tab.tscn" id="3_ubvhi"]
 
 [node name="MainScene" type="CanvasLayer" unique_id=30763794]
 script = ExtResource("1_dv3lr")
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1245513408]
+offset_left = -100.0
+offset_top = -59.0
+offset_right = 1208.0
+offset_bottom = 697.0
+color = Color(0, 0.16862746, 0.34901962, 1)
+
 [node name="AudioPool" parent="." unique_id=273793504 instance=ExtResource("2_ubvhi")]
 
 [node name="Beat" type="Timer" parent="." unique_id=125621210]
 
-[node name="Score" type="Label" parent="." unique_id=352233301]
-offset_left = 379.0
-offset_top = 45.0
-offset_right = 495.0
-offset_bottom = 68.0
+[node name="Resources" type="Panel" parent="." unique_id=59851754]
+offset_left = 878.0
+offset_top = 17.0
+offset_right = 1136.0
+offset_bottom = 237.0
+theme = ExtResource("3_24sno")
+
+[node name="Resources" type="VBoxContainer" parent="Resources" unique_id=1457213572]
+layout_direction = 3
+layout_mode = 1
+anchors_preset = -1
+offset_left = 7.0
+offset_top = 9.0
+offset_right = 156.0
+offset_bottom = 61.0
+
+[node name="Score" type="Label" parent="Resources/Resources" unique_id=352233301]
+layout_mode = 2
+theme = ExtResource("3_24sno")
 text = "Score: 1000000"
 
-[node name="MusicTracksScroll" type="ScrollContainer" parent="." unique_id=2051574910]
-offset_left = 10.0
-offset_top = 80.0
-offset_right = 591.0
-offset_bottom = 640.0
+[node name="BPM" type="Label" parent="Resources/Resources" unique_id=1640665350]
+layout_mode = 2
+theme = ExtResource("3_24sno")
+text = "BPM: 64"
 
-[node name="MusicTracks" type="VBoxContainer" parent="MusicTracksScroll" unique_id=1473698470]
+[node name="Panel" type="Panel" parent="." unique_id=23754453]
+offset_left = 34.0
+offset_top = 48.0
+offset_right = 643.0
+offset_bottom = 577.0
+theme = ExtResource("3_24sno")
+
+[node name="MusicTracksScroll" type="ScrollContainer" parent="Panel" unique_id=2051574910]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 11.0
+offset_right = 599.0
+offset_bottom = 518.0
+
+[node name="MusicTracks" type="VBoxContainer" parent="Panel/MusicTracksScroll" unique_id=1473698470]
 layout_mode = 2
 
-[node name="SequencerTab" parent="MusicTracksScroll/MusicTracks" unique_id=327590210 instance=ExtResource("3_ubvhi")]
+[node name="SequencerTab" parent="Panel/MusicTracksScroll/MusicTracks" unique_id=327590210 instance=ExtResource("3_ubvhi")]
 layout_mode = 2
 
-[node name="SequencerTab2" parent="MusicTracksScroll/MusicTracks" unique_id=769310536 instance=ExtResource("3_ubvhi")]
+[node name="SequencerTab2" parent="Panel/MusicTracksScroll/MusicTracks" unique_id=769310536 instance=ExtResource("3_ubvhi")]
 layout_mode = 2
 id = 1
 
+[node name="UpgradeBPM" type="Button" parent="." unique_id=1191435458]
+offset_left = 892.0
+offset_top = 183.0
+offset_right = 986.0
+offset_bottom = 226.0
+text = "Upgrade BPM"
+
 [connection signal="timeout" from="Beat" to="." method="_on_beat_timeout"]
+[connection signal="pressed" from="UpgradeBPM" to="." method="_on_upgrade_bpm_pressed"]

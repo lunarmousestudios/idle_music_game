@@ -24,6 +24,11 @@ PlayerResources="*uid://cnmo6hcnoy27j"
 
 window/size/resizable=false
 
+[gui]
+
+theme/custom="uid://bvi5vwg7piesp"
+theme/custom_font="uid://cpc6dfttc1r1u"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
